@@ -1,178 +1,1160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Mark Langhamer Jr.</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <title>Mark Langhamer Jr.</title>
+    <!-- Custom Fonts -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet" />
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet" />
+    <style>
+      /*!
+ * Start Bootstrap - Stylish Portfolio v5.0.3 (https://startbootstrap.com/template-overviews/stylish-portfolio)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ */
 
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
 
-</head>
+      body {
+        font-family: "Source Sans Pro";
+      }
+      
+      .masthead {
+        background-image: url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg") !important;
+      }
+      .btn-dark {
+        margin-bottom: 0.25rem;
+      }
 
-<body id="page-top">
+      #fcc {
+        background-color: forestgreen;
+      }
+      #udemy {
+        background-color: firebrick;
+      }
+      #zenva {
+        background-color: aquamarine;
+      }
 
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+      .content-section {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+      }
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Mark Langhamer Jr.</h1>
-      <h3 class="mb-5">
-        <em>Web Developer</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-    </div>
-    <div class="overlay"></div>
-  </header>
+      .content-section-heading h2 {
+        font-size: 3rem;
+      }
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
+      .content-section-heading h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+      }
+
+      .text-faded {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* Map */
+      .map {
+        height: 30rem;
+      }
+
+      @media (max-width: 992px) {
+        .map {
+          height: 75%;
+        }
+      }
+
+      .map iframe {
+        pointer-events: none;
+      }
+
+      .scroll-to-top {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        display: none;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: white;
+        background: rgba(52, 58, 64, 0.5);
+        line-height: 45px;
+      }
+
+      .scroll-to-top:focus,
+      .scroll-to-top:hover {
+        color: white;
+      }
+
+      .scroll-to-top:hover {
+        background: #343a40;
+      }
+
+      .scroll-to-top i {
+        font-weight: 800;
+      }
+
+      .masthead {
+        min-height: 30rem;
+        position: relative;
+        display: table;
+        width: 100%;
+        height: auto;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(rgba(255, 255, 255, 0.1)),
+            to(rgba(255, 255, 255, 0.1))
+          ),
+          url("../img/code.jpg");
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.1) 100%
+          ),
+          url("../img/code.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .masthead h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (min-width: 992px) {
+        .masthead {
+          height: 100vh;
+        }
+        .masthead h1 {
+          font-size: 5.5rem;
+        }
+      }
+
+      /* Side Menu */
+      #sidebar-wrapper {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        -webkit-transform: translateX(250px);
+        transform: translateX(250px);
+        background: #1d809f;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .sidebar-nav li.sidebar-nav-item a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+      }
+
+      .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .sidebar-nav li a:active,
+      .sidebar-nav li a:focus {
+        text-decoration: none;
+      }
+
+      .sidebar-nav > .sidebar-brand {
+        font-size: 1.2rem;
+        background: rgba(52, 58, 64, 0.1);
+        height: 80px;
+        line-height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+      }
+
+      .sidebar-nav > .sidebar-brand a {
+        color: #fff;
+      }
+
+      .sidebar-nav > .sidebar-brand a:hover {
+        color: #fff;
+        background: none;
+      }
+
+      #sidebar-wrapper.active {
+        right: 250px;
+        width: 250px;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+      }
+
+      .menu-toggle {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: rgba(52, 58, 64, 0.5);
+        line-height: 50px;
+        z-index: 999;
+      }
+
+      .menu-toggle:focus,
+      .menu-toggle:hover {
+        color: #fff;
+      }
+
+      .menu-toggle:hover {
+        background: #343a40;
+      }
+
+      .service-icon {
+        background-color: #fff;
+        color: #1d809f;
+        height: 7rem;
+        width: 7rem;
+        display: block;
+        line-height: 7.5rem;
+        font-size: 2.25rem;
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .callout {
+        padding: 15rem 0;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(rgba(255, 255, 255, 0.1)),
+            to(rgba(255, 255, 255, 0.1))
+          ),
+          url("../img/code.jpg");
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.1) 100%
+          ),
+          url("../img/code.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .callout h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        display: block;
+        max-width: 30rem;
+      }
+
+      .portfolio-item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 555px;
+        height: 555px;
+        margin: auto auto 1rem;
+      }
+
+      .portfolio-item .caption {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 555px;
+        background-color: rgba(33, 37, 41, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+
+      .portfolio-item .caption .caption-content {
+        color: #fff;
+        margin: auto 2rem 2rem;
+      }
+
+      .portfolio-item .caption .caption-content h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+
+      .portfolio-item .caption .caption-content p {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+
+      @media (min-width: 992px) {
+        .portfolio-item {
+          max-width: none;
+          margin: 0;
+        }
+        .portfolio-item .caption {
+          -webkit-transition: -webkit-clip-path 0.25s ease-out,
+            background-color 0.7s;
+          -webkit-clip-path: inset(0px);
+          clip-path: inset(0px);
+        }
+        .portfolio-item .caption .caption-content {
+          -webkit-transition: opacity 0.25s;
+          transition: opacity 0.25s;
+          /* margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem; */
+        }
+        .portfolio-item img {
+          -webkit-transition: -webkit-clip-path 0.25s ease-out;
+          -webkit-clip-path: inset(-1px);
+          clip-path: inset(-1px);
+          width: 555px;
+          height: 555px;
+        }
+        .portfolio-item:hover img {
+          -webkit-clip-path: inset(2rem);
+          clip-path: inset(2rem);
+        }
+        .portfolio-item:hover .caption {
+          background-color: rgba(29, 128, 159, 0.9);
+          -webkit-clip-path: inset(2rem);
+          clip-path: inset(2rem);
+        }
+      }
+
+      footer.footer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      footer.footer .social-link {
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4.3rem;
+        font-size: 1.5rem;
+        background-color: #1d809f;
+        -webkit-transition: background-color 0.15s ease-in-out;
+        transition: background-color 0.15s ease-in-out;
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      footer.footer .social-link:hover {
+        background-color: #155d74;
+        text-decoration: none;
+      }
+
+      a {
+        color: #1d809f;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        color: #155d74;
+      }
+
+      .btn-primary {
+        background-color: #1d809f !important;
+        border-color: #1d809f !important;
+        color: #fff !important;
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus,
+      .btn-primary:active {
+        background-color: #155d74 !important;
+        border-color: #155d74 !important;
+      }
+
+      .btn-secondary {
+        background-color: #ecb807 !important;
+        border-color: #ecb807 !important;
+        color: #fff !important;
+      }
+
+      .btn-secondary:hover,
+      .btn-secondary:focus,
+      .btn-secondary:active {
+        background-color: #ba9106 !important;
+        border-color: #ba9106 !important;
+      }
+
+      .btn-dark {
+        color: #fff !important;
+      }
+
+      .btn {
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+        font-weight: 700;
+      }
+
+      .bg-primary {
+        background-color: #1d809f !important;
+      }
+
+      .text-primary {
+        color: #1d809f !important;
+      }
+
+      .text-secondary {
+        color: #ecb807 !important;
+      }
+
+      #about {
+        height: 60rem;
+      }
+      .container {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .brand {
+        text-align: center;
+      }
+
+      .brand span {
+        color: #fff;
+      }
+
+      .wrapper {
+        box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+      }
+
+      .wrapper > * {
+        padding: 1em;
+      }
+
+      .company-info {
+        background: #c9e6ff;
+      }
+
+      .company-info h3,
+      .company-info ul {
+        text-align: center;
+        margin: 0 0 1rem 0;
+      }
+
+      .contact {
+        background: #f9feff;
+      }
+
+      /* FORM STYLES */
+      .contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .contact form label {
+        display: block;
+      }
+
+      .contact form p {
+        margin: 0;
+      }
+
+      .contact form .full {
+        grid-column: 1 / 3;
+      }
+
+      .contact form button,
+      .contact form input,
+      .contact form textarea {
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #c9e6ff;
+      }
+
+      .contact form button {
+        background: #c9e6ff;
+        border: 0;
+        text-transform: uppercase;
+      }
+
+      .contact form button:hover,
+      .contact form button:focus {
+        background: #92bde7;
+        color: #fff;
+        outline: 0;
+        transition: background-color 2s ease-out;
+      }
+
+      /* LARGE SCREENS */
+      @media (min-width: 700px) {
+        .wrapper {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
+
+        .wrapper > * {
+          padding: 2em;
+        }
+
+        .company-info h3,
+        .company-info ul,
+        .brand {
+          text-align: left;
+        }
+      }
+      .portfolio {
+  margin-bottom: -30px;
+}
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c;
+  opacity: 1;
+}
+    </style>
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Langhamer Dev</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">Education</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Tech Skills</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Mark Langhamer Jr.</h1>
+        <h3 class="mb-5">
+          <em>Full Stack Developer</em>
+        </h3>
+        <a class="btn btn-primary js-scroll-trigger" href="#about"
+          >Find Out More</a
+        >
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <h1
+          style="bottom: 11vh; position: relative;"
+        >
+          Education & Credentials
+        </h1>
+        <br />
+        <div class="row">
+          <div class="col-lg-3 mx-auto">
+            <div
+              class="card mb-3"
+              style="max-width: 18rem; background-color: mediumslateblue; height: 13rem;"
+            >
+              <div class="card-header">
+                <h3>Northwestern University</h3>
+                <!-- <h6>Coding Bootcamp</h6> -->
+              </div>
+              <div class="card-body">
+                <!-- <h5 class="card-title"><a class="btn btn-dark" href="">Web Development & Coding Certificate</a></h5> -->
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#exampleModalScrollable"
+                >
+                  View Certificate
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModalScrollable"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalScrollableTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-scrollable"
+                    role="document"
+                  >
+                    <div
+                      style="background-color: mediumslateblue;"
+                      class="modal-content"
+                    >
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title"
+                          id="exampleModalScrollableTitle"
+                        >
+                          Northwestern Coding Bootcamp
+                        </h5>
+                        <button
+                          type="button"
+                          class="close btn-dark"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/nwcert.jpg"
+                          style="
+                        width: 75%;
+                        height: 75%;
+                        "
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-dark"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div
+              class="card mb-3"
+              style="max-width: 18rem; background-color:forestgreen; height: 13rem;"
+            >
+              <div class="card-header">
+                <h3>
+                  Free Code
+                  <br />
+                  Camp
+                </h3>
+              </div>
+              <div class="card-body">
+                <button
+                  class="btn btn-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View Certificates
+                </button>
+                <div class="collapse" id="collapseExample">
+                  <div id="fcc" class="card card-body">
+                    <div class="col-lg-12 mx-auto">
+                      <a id="fcc-btn" class="btn btn-dark" href=""
+                        >Responsive Web Design</a
+                      >
+                      <a id="fcc-btn" class="btn btn-dark" href=""
+                        >JavaScript Algorithms and Data Structures</a
+                      >
+                      <a id="fcc-btn" class="btn btn-dark" href=""
+                        >Front End Libraries</a
+                      >
+
+                      <a id="fcc-btn" class="btn btn-dark" href=""
+                        >Data Visualization</a
+                      >
+                      <a id="fcc-btn" class="btn btn-dark" href=""
+                        >APIs and Microservices</a
+                      >
+                      <a id="fcc-btn" class="btn btn-dark" href=""
+                        >Information Security and Quality Assurance</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mx-auto">
+            <div
+              class="card mb-3"
+              style="max-width: 18rem; background-color: firebrick; height: 13rem;"
+            >
+              <div class="card-header">
+                <h3 style="margin-bottom: 2.7rem;">Udemy</h3>
+              </div>
+              <div class="card-body">
+                <button
+                  class="btn btn-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample2"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View Certificates
+                </button>
+                <div class="collapse" id="collapseExample2">
+                  <div id="udemy" class="card card-body">
+                    <div class="col-lg-12 mx-auto">
+                      <a class="btn btn-dark" href=""
+                        >M.E.R.N. Stack Web Development</a
+                      >
+                      <a class="btn btn-dark" href="">Python Bootcamp</a>
+                      <a class="btn btn-dark" href="">Java Masterclass</a>
+                      <a class="btn btn-dark" href=""
+                        >PHP Full Stack Bootcamp</a
+                      >
+                      <a class="btn btn-dark" href="">Android Development</a>
+                      <a class="btn btn-dark" href="">iOS Development</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div
+              class="card mb-3"
+              style="max-width: 18rem; background-color: aquamarine; height: 13rem;"
+            >
+              <div class="card-header">
+                <h3 style="margin-bottom: 2.7rem;">Zenva</h3>
+              </div>
+              <div class="card-body">
+                <button
+                  class="btn btn-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample3"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  View Certificates
+                </button>
+                <div class="collapse" id="collapseExample3">
+                  <div id="zenva" class="card card-body">
+                    <div class="col-lg-12 mx-auto">
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Game Development</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Mobile App Development</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Vue.js</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Next.js</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Angular</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Python</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Data Manipulation with Panda</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >Java for Android</a
+                      >
+                      <a
+                        style="padding: 0 !important;"
+                        class="btn btn-dark"
+                        href=""
+                        >iOS Development</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2>About Me</h2>
-          <p id="about" class="lead mb-5"><strong>
-            I am a 25 year old Full Stack Web Developer located in the Chicagoland Area. 
-            Studied Web Development and Coding at Northwestern University.
-            Click the button below to see what technologies and languages I am proficient in.
-          </strong>
-          </p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Tech Skills</a>
+          <a class="btn btn-dark js-scroll-trigger" href="#services">View Programming Skills</a>
         </div>
-      </div>
-    </div>
-  </section>
+      </div> -->
+    </section>
 
-  <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0"><strong>Technologies and Languages</strong></h3>
-        <h2 class="mb-5">M.E.R.N. Full Stack Web Developer</h2>
+    <!-- Services -->
+    <section
+      class="content-section bg-primary text-white text-center"
+      id="services"
+    >
+      <div class="container">
+        <div class="content-section-heading">
+          <h2
+            style="position: relative;
+          bottom: 11vh;"
+            class="text-secondary mb-0"
+          >
+            <strong>Tech Skills</strong>
+          </h2>
+        </div>
+        <div style="padding-bottom: 3rem;" class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                id="ex-icon"
+                src="https://cms-assets.tutsplus.com/uploads/users/1116/posts/24835/preview_image/mongodb-logo.png"
+              />
+            </span>
+            <h4>
+              <strong>MongoDB</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 1rem;"
+                id="ex-icon"
+                src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png"
+              />
+            </span>
+            <h4>
+              <strong>Express</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 1rem;"
+                id="ex-icon"
+                src="https://s3-us-west-2.amazonaws.com/wecp-static/www/prod/images/AssessmentForLearning/icon-reactjs.svg"
+              />
+            </span>
+            <h4>
+              <strong>React</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                id="ex-icon"
+                src="img/iconfinder_nodejs-512_339733.png"
+                style="margin-bottom: 1rem;"
+              />
+            </span>
+            <h4>
+              <strong>Node</strong>
+            </h4>
+          </div>
+        </div>
+        <div style="padding-bottom: 3rem;" class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 1rem;"
+                id="ex-icon"
+                src="https://img.icons8.com/ios/50/000000/mysql-logo-filled.png"
+              />
+            </span>
+            <h4>
+              <strong>MySQL</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </span>
+            <h4>
+              <strong>HTML5</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 1rem;"
+                id="ex-icon"
+                src="http://www.anujgakhar.com/wp-content/uploads/2013/05/logo-javascript.png"
+              />
+            </span>
+            <h4>
+              <strong>JavaScript</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 0.5rem;"
+                id="ex-icon"
+                src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"
+              />
+            </span>
+            <h4>
+              <strong>CSS</strong>
+            </h4>
+          </div>
+        </div>
+        <div style="padding-bottom: 3rem;" class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 1rem;"
+                id="ex-icon"
+                src="https://www.php.net/images/logos/new-php-logo.svg"
+              />
+            </span>
+            <h4>
+              <strong>PHP</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 1rem;"
+                id="ex-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png"
+              />
+            </span>
+            <h4>
+              <strong>Python</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                id="ex-icon"
+                src="/img/swift.png"
+                style="margin-bottom: 2rem;"
+              />
+            </span>
+            <h4>
+              <strong>iOS</strong>
+            </h4>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img
+                style="margin-bottom: 2rem;"
+                id="ex-icon"
+                src="https://i.pinimg.com/originals/f1/ea/a7/f1eaa7278f64e27128e062a3de918265.png"
+              />
+            </span>
+            <h4>
+              <strong>Java</strong>
+            </h4>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="https://cms-assets.tutsplus.com/uploads/users/1116/posts/24835/preview_image/mongodb-logo.png">
-          </span>
-          <h4>
-            <strong>MongoDB</strong>
-          </h4>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png">
-          </span>
-          <h4>
-            <strong>Express</strong>
-          </h4>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="https://s3-us-west-2.amazonaws.com/wecp-static/www/prod/images/AssessmentForLearning/icon-reactjs.svg">
-          </span>
-          <h4>
-            <strong>React</strong>
-          </h4>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="img/iconfinder_nodejs-512_339733.png">
-          </span>
-          <h4>
-            <strong>Node</strong>
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="https://img.icons8.com/ios/50/000000/mysql-logo-filled.png">
-          </span>
-          <h4>
-            <strong>MySQL</strong>
-          </h4>
-          <p class="text-faded mb-0"></p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fa fa-code" aria-hidden="true"></i>
-          </span>
-          <h4>
-            <strong>HTML5</strong>
-          </h4>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="http://www.anujgakhar.com/wp-content/uploads/2013/05/logo-javascript.png">
-          </span>
-          <h4>
-            <strong>JavaScript</strong>
-          </h4>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png">
-          </span>
-          <h4>
-            <strong>CSS</strong>
-          </h4>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 id=contact class="mx-auto mb-5">Contact</h2>
+    <!-- Callout -->
+    <section id="contact" class="callout" style="background:#92bde7;">
+      <!-- <div class="container text-center">
+        <h2 id="contact" class="mx-auto mb-5">Contact</h2>
 
         <p id="contact-info"><strong>Phone: (331) 645-9495</strong></p>
         <p id="contact-info"><strong>Email: langhamerm@gmail.com</strong></p>
-      <a class="btn btn-primary btn-xl" href="./resume/Mark-Langhamer (1).pdf">Resume Download</a>
-    </div>
-  </section>
+        <a class="btn btn-primary" href="./resume/Mark-Langhamer (1).pdf"
+          >Resume Download</a
+        >
+      </div> -->
+      <div class="container">
+        <h1 class="brand"><span>Langhamer</span>Dev</h1>
+        <div class="wrapper animated bounceInLeft">
+          <div class="company-info">
+            <h3>Langhamer Dev</h3>
+            <ul>
+              <!-- <li><i class="fa fa-road"></i> 44 Something st</li> -->
+              <li><i class="fa fa-phone"></i> (331) 645-9495</li>
+              <li><i class="fa fa-envelope"></i> mail@langhamerdev.com</li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>Email</h3>
+            <form>
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" />
+              </p>
+              <p>
+                <label>Company</label>
+                <input type="text" name="company" />
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" />
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone" />
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5"></textarea>
+              </p>
+              <p class="full">
+                <button>Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Portfolio -->
+    <!-- Portfolio -->
+    <!-- Portfolio -->
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
@@ -181,133 +1163,108 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://langhamerm.github.io/unit-4-game/">
+          <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Crystal Collector</h2>
-                <p class="mb-0">A Javascript based puzzle game.</p>
+                <h2>Stationary</h2>
+                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
               </span>
             </span>
-            <img class="img-fluid" src="./img/greenCry.jpeg" alt="GreenCrystal">
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://langhamerm.github.io/TriviaGame/">
+          <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Who's that Pokemon?</h2>
-                <p class="mb-0">Pokemon based guessing game created with React JS</p>
+                <h2>Ice Cream</h2>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
               </span>
             </span>
-            <img class="img-fluid" src="./img/pokeball2.jpg" alt="Pokeball">
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://langhamerm.github.io/RPS-Multiplayer/">
+          <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>RPS-Multiplayer</h2>
-                <p class="mb-0">2 Player Rock Paper Scissors Game using Javascript and Firebase for data/message storage.</p>
+                <h2>Strawberries</h2>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
               </span>
             </span>
-            <img class="img-fluid" src="./img/Rpspic.png" alt="RPS">
+            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://flickscore.herokuapp.com/">
+          <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Flicksore</h2>
-                <p class="mb-0">A Node and Express based open source movie voting and info datbase using MYSQL.</p>
+                <h2>Workspace</h2>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
               </span>
             </span>
-            <img class="img-fluid" src="./img/FliXit.png" alt="Flickscore">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://glacial-plateau-25356.herokuapp.com/">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Eat The Burger</h2>
-                <p class="mb-0">MYSQL based CRUD application allowing you to create, remove, update, and destroy objects(Burgers) from the database.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="./img/burger.jpeg" alt="Burger">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://my-doc-docs.herokuapp.com/">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Doc-Docs</h2>
-                <p class="mb-0">A full MERN stack application marketed towards Health Care professionals to keep patient records.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="./img/docdocoo.jpg" alt="Doc-Docs">
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <!-- <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section> -->
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a
+              class="social-link rounded-circle text-white mr-3"
+              href="https://www.linkedin.com/in/mark-langhamer-983516127/"
+            >
+              <i class="icon-social-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              class="social-link rounded-circle text-white mr-3"
+              href="https://plus.google.com/u/0/101980958174364484714"
+            >
+              <i class="icon-social-google"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              class="social-link rounded-circle text-white"
+              href="https://github.com/langhamerm"
+            >
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">
+          Copyright &copy; Mark's Portfolio 2019
+        </p>
+        <p class="text-muted small mb-0">
+          Template Portfolio Code Borrowed from
+          <a
+            href="https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio"
+            >BlackrockDigital</a
+          >
+        </p>
+      </div>
+    </footer>
 
-  <!-- Map -->
-  <!-- <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section> -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/mark-langhamer-983516127/">
-            <i class="icon-social-linkedin"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://plus.google.com/u/0/101980958174364484714">
-            <i class="icon-social-google"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://github.com/langhamerm">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Mark's Portfolio 2019</p>
-      <p class="text-muted small mb-0">Template Portfolio Code Borrowed from <a href="https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio">BlackrockDigital</a> </p>
-    </div>
-  </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-
-</body>
-
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+  </body>
 </html>
