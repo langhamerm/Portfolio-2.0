@@ -237,20 +237,16 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
-  width: 555px;
-  height: 555px;
+  width: 100%;
+  height: 100%;
   margin: auto auto 1rem;
 }
 
 .portfolio-item .caption {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 555px;
-  background-color: rgba(33, 37, 41, 0.2);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
-  bottom: 0;
   z-index: 1;
 }
 
@@ -290,8 +286,8 @@ h6 {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
-    width: 555px;
-    height: 555px;
+    width: 100%;
+    height: 100%;
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);

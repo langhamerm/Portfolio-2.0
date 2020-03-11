@@ -305,6 +305,9 @@ h6 {
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.8rem;
+  position: relative;
+  right: 7rem;
+  bottom: 5rem;
 }
 .portfolio-item .caption .caption-content ul li {
   font-size: 1.5rem;
