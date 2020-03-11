@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-2.0",
+  "version": "1.0.0",
+  "description": "LIVE SITE:\r https://langhamerm.github.io/Portfolio-2.0/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langhamerm/Portfolio-2.0.git"
+  },
+  "author": "Mark Langhamer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langhamerm/Portfolio-2.0/issues"
+  },
+  "homepage": "https://github.com/langhamerm/Portfolio-2.0#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "nodemailer": "^6.4.5",
+    "nodemon": "^2.0.2"
+  }
+}

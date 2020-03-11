@@ -30,11 +30,10 @@
       rel="stylesheet"
     />
 
-
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet" />
     <link href="css/stylish-portfolio.min.css" rel="stylesheet" />
-    <style>
+    <!-- <style>
       /*!
  * Start Bootstrap - Stylish Portfolio v5.0.3 (https://startbootstrap.com/template-overviews/stylish-portfolio)
  * Copyright 2013-2019 Start Bootstrap
@@ -50,7 +49,7 @@
       body {
         font-family: "Source Sans Pro";
       }
-      
+
       .masthead {
         background-image: url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg") !important;
       }
@@ -565,59 +564,62 @@
         }
       }
       .portfolio {
-  margin-bottom: -30px;
-}
+        margin-bottom: -30px;
+      }
 
-.portfolio .portfolio-item {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  margin-bottom: 30px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
+      .portfolio .portfolio-item {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        max-width: 25rem;
+        margin-bottom: 30px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
 
-.portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
-}
+      .portfolio .portfolio-item .portfolio-item-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        background-color: rgba(26, 188, 156, 0.9);
+      }
 
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
+      .portfolio .portfolio-item .portfolio-item-caption:hover {
+        opacity: 1;
+      }
 
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
-}
+      .portfolio
+        .portfolio-item
+        .portfolio-item-caption
+        .portfolio-item-caption-content {
+        font-size: 1.5rem;
+      }
 
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
-}
+      .portfolio-modal .portfolio-modal-title {
+        font-size: 2.25rem;
+        line-height: 2rem;
+      }
 
-@media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
+      @media (min-width: 992px) {
+        .portfolio-modal .portfolio-modal-title {
+          font-size: 3rem;
+          line-height: 2.5rem;
+        }
+      }
 
-.portfolio-modal .close {
-  position: absolute;
-  z-index: 1;
-  right: 1.5rem;
-  top: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #1abc9c;
-  opacity: 1;
-}
-    </style>
+      .portfolio-modal .close {
+        position: absolute;
+        z-index: 1;
+        right: 1.5rem;
+        top: 1rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        color: #1abc9c;
+        opacity: 1;
+      }
+    </style> -->
   </head>
 
   <body id="page-top">
@@ -665,9 +667,7 @@
     <!-- About -->
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
-        <h1
-          style="bottom: 11vh; position: relative;"
-        >
+        <h1 style="bottom: 11vh; position: relative;">
           Education & Credentials
         </h1>
         <br />
@@ -1155,60 +1155,68 @@
 
     <!-- Portfolio -->
     <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://fast-plateau-93122.herokuapp.com/">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Persevere Code Camp</h2>
+                  <p class="mb-0">
+                    A full stack interactive coding bootcamp with login through google, progress tracking, built in code editors, and much more!
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="/img/pcc.png" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ameri-Mark</h2>
+                  <p class="mb-0">
+                    A business site for a prominent real estate company.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="/img/amerimark.png" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>World Word Guess Game</h2>
+                  <p class="mb-0">
+                   A world city themed word guessing game made with Javascript.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="/img/wwgg.png" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Pokemon Memory Game</h2>
+                  <p class="mb-0">
+                    A React based memory challenge game.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="/img/clicky.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Footer -->
     <footer class="footer text-center">
