@@ -211,7 +211,7 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
+  /* background: rgba(52, 58, 64, 0.5); */
   line-height: 50px;
   z-index: 999;
 }
@@ -237,7 +237,7 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.callout {
+/* .callout {
   padding: 15rem 0;
   background: -webkit-gradient(
       linear,
@@ -256,7 +256,7 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .callout h2 {
   font-size: 3.5rem;
@@ -279,7 +279,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   width: 555px;
-  background-color: rgba(33, 37, 41, 0.2);
+  /* background-color: rgba(33, 37, 41, 0.2); */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -307,14 +307,14 @@ h6 {
     margin: 0;
   }
   .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out,
-      background-color 0.7s;
+    /* -webkit-transition: -webkit-clip-path 0.25s ease-out,
+      background-color 0.7s; */
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
+    /* -webkit-transition: opacity 0.25s; */
+    /* transition: opacity 0.25s; */
     /* margin-left: 5rem;
 margin-right: 5rem;
 margin-bottom: 5rem; */
@@ -460,7 +460,7 @@ ul {
 }
 
 .contact {
-  background: #f9feff;
+  background: #23e7ffed;
 }
 
 /* FORM STYLES */
@@ -491,11 +491,13 @@ ul {
 }
 
 .contact form button {
-  background: #c9e6ff;
-  border: 0;
+  background: orangered;
+  border: blue 1px solid;
   text-transform: uppercase;
+  text-shadow: blue 1px 1px;
+  color: white;
+  font-weight: bolder;
 }
-
 .contact form button:hover,
 .contact form button:focus {
   background: #92bde7;
@@ -576,4 +578,24 @@ ul {
   line-height: 3rem;
   color: #1abc9c;
   opacity: 1;
+}
+
+#about {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background-image: url('/public/img/navy.jpg');
+  /* background-repeat: no-repeat; */
+  color: white;
+  text-shadow: black 2px 2px;
+}
+#contact {
+  background-color: navy !important;
+}
+
+.company-info {
+  background: deepskyblue !important;
+}
+
+#portfolio {
+  background-image: url('https://i2.wp.com/background4free.com/download/cobalt_blue_blue_violet_783121207.jpg?q=100 ');
 }
