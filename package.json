@@ -4,8 +4,6 @@
   "description": "LIVE SITE:\r https://langhamerm.github.io/Portfolio-2.0/",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "node app.js",
     "start:dev": "webpack-dev-server",
     "build": "webpack --config prod.config.js",
