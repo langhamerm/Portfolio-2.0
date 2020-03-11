@@ -1,9 +1,12 @@
 {
+  
   "name": "portfolio-2.0",
   "version": "1.0.0",
   "description": "LIVE SITE:\r https://langhamerm.github.io/Portfolio-2.0/",
   "main": "app.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/langhamerm/Portfolio-2.0/issues"
   },
-  "homepage": "https://github.com/langhamerm/Portfolio-2.0#readme",
+  "homepage": "https://langhamerm.github.io/Portfolio-2.0",
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
