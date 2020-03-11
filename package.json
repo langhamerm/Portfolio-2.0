@@ -4,6 +4,7 @@
   "description": "LIVE SITE:\r https://langhamerm.github.io/Portfolio-2.0/",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "express-handlebars": "^3.1.0",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.2.0",
+    "handlebars": "^4.7.3",
     "nodemailer": "^6.4.5",
     "nodemon": "^2.0.2"
   }
