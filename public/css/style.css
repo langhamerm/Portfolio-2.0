@@ -93,6 +93,10 @@ h6 {
   font-weight: 800;
 }
 
+.card {
+  border: 3px solid silver;
+}
+
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -484,12 +488,13 @@ ul {
 }
 
 .contact form button {
-  background: orangered;
-  border: blue 1px solid;
+  background: mediumpurple;
+  border: yellow 2px solid;
   text-transform: uppercase;
   text-shadow: blue 1px 1px;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: 24px;
 }
 .contact form button:hover,
 .contact form button:focus {
@@ -498,6 +503,7 @@ ul {
   outline: 0;
   transition: background-color 2s ease-out;
 }
+
 
 /* LARGE SCREENS */
 @media (min-width: 700px) {
@@ -591,4 +597,8 @@ ul {
 
 #portfolio {
   background-image: url('https://i2.wp.com/background4free.com/download/cobalt_blue_blue_violet_783121207.jpg?q=100 ');
+}
+
+.img-fluid {
+  padding: 3em !important;
 }
