@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Stylish Portfolio v5.0.3 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
- */
-
 body,
 html {
   width: 100%;
@@ -11,13 +5,25 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 }
 
-.btn-xl {
-  padding: 1.25rem 2.5rem;
+.masthead {
+  background-image: url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg") !important;
+}
+.btn-dark {
+  margin-bottom: 0.25rem;
 }
 
+#fcc {
+  background-color: forestgreen;
+}
+#udemy {
+  background-color: firebrick;
+}
+#zenva {
+  background-color: aquamarine;
+}
 
 .content-section {
   padding-top: 7.5rem;
@@ -32,6 +38,7 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
 }
+
 
 h1,
 h2,
@@ -74,7 +81,8 @@ h6 {
   line-height: 45px;
 }
 
-.scroll-to-top:focus, .scroll-to-top:hover {
+.scroll-to-top:focus,
+.scroll-to-top:hover {
   color: white;
 }
 
@@ -86,6 +94,10 @@ h6 {
   font-weight: 800;
 }
 
+.card {
+  border: 3px solid silver;
+}
+
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -94,8 +106,20 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0.1)),
+      to(rgba(255, 255, 255, 0.1))
+    ),
+    url("../img/code.jpg");
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url("../img/code.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +151,7 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #1D809F;
+  background: #1d809f;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -192,12 +216,13 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
+  /* background: rgba(52, 58, 64, 0.5); */
   line-height: 50px;
   z-index: 999;
 }
 
-.menu-toggle:focus, .menu-toggle:hover {
+.menu-toggle:focus,
+.menu-toggle:hover {
   color: #fff;
 }
 
@@ -207,7 +232,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #1d809f;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -217,14 +242,26 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.callout {
+/* .callout {
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-callout.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0.1)),
+      to(rgba(255, 255, 255, 0.1))
+    ),
+    url("../img/code.jpg");
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url("../img/code.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .callout h2 {
   font-size: 3.5rem;
@@ -235,19 +272,25 @@ h6 {
 
 .portfolio-item {
   display: block;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   margin: auto auto 1rem;
+  text-align: center !important;
+  /* background-color: cyan; */
 }
+
+.col-lg-6 {
+  padding: 5px;
+}
+
 
 .portfolio-item .caption {
   display: -webkit-box;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
+  height: 100% !important;
+  text-align: center !important;
+
 }
 
 .portfolio-item .caption .caption-content {
@@ -260,10 +303,12 @@ h6 {
   text-transform: uppercase;
 }
 
-.portfolio-item .caption .caption-content p {
+/* .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
-}
+  color: white;
+  text-shadow: 1px 1px black;
+} */
 
 @media (min-width: 992px) {
   .portfolio-item {
@@ -271,19 +316,17 @@ h6 {
     margin: 0;
   }
   .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    /* -webkit-transition: -webkit-clip-path 0.25s ease-out,
+      background-color 0.7s; */
+      
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
-    -webkit-transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s; 
     transition: opacity 0.25s;
-    /* margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem; */
   }
   .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
     width: 100%;
@@ -292,11 +335,13 @@ h6 {
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+    /* visibility: hidden; */
   }
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+   
   }
 }
 
@@ -311,7 +356,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #1d809f;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -324,20 +369,24 @@ footer.footer .social-link:hover {
 }
 
 a {
-  color: #1D809F;
+  color: #1d809f;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: #155d74;
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #1d809f !important;
+  border-color: #1d809f !important;
   color: #fff !important;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #155d74 !important;
   border-color: #155d74 !important;
 }
@@ -348,7 +397,9 @@ a:hover, a:focus, a:active {
   color: #fff !important;
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
   background-color: #ba9106 !important;
   border-color: #ba9106 !important;
 }
@@ -364,13 +415,208 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #1d809f !important;
 }
 
 .text-primary {
-  color: #1D809F !important;
+  color: #1d809f !important;
 }
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+#about {
+  height: 60rem;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand span {
+  color: #fff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.company-info {
+  background: #c9e6ff;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact {
+  background: #23e7ffed;
+}
+
+/* FORM STYLES */
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: mediumpurple;
+  border: yellow 2px solid;
+  text-transform: uppercase;
+  text-shadow: blue 1px 1px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.contact form button:hover,
+.contact form button:focus {
+  background: #92bde7;
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+.portfolio {
+  margin-bottom: -30px;
+}
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  /* position: relative; */
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.portfolio
+  .portfolio-item
+  .portfolio-item-caption
+  .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-item {
+  text-shadow: 1px 1px black;
+  color: white;
+  z-index: 1;
+}
+
+.p-title {
+  padding-bottom: 5px;
+  color: white !important;
+  text-shadow: 2px 2px black !important;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.portfolio-modal .close {
+  /* position: absolute; */
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c;
+  opacity: 1;
+}
+
+#about {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background-image: url('../public/img/navy.jpg');
+  /* background-repeat: no-repeat; */
+  color: white;
+  text-shadow: black 2px 2px;
+}
+#contact {
+  background-color: navy !important;
+}
+
+.company-info {
+  background: deepskyblue !important;
+}
+
+#portfolio {
+  background-image: url('https://i2.wp.com/background4free.com/download/cobalt_blue_blue_violet_783121207.jpg?q=100 ');
+}
+
+.img-fluid {
+  padding: 3em !important;
 }

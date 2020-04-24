@@ -10,29 +10,29 @@
   <title>Mark Langhamer Jr.</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="/public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Custom Fonts -->
    <link
-      href="/public/vendor/fontawesome-free/css/all.min.css"
+      href="vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
       type="text/css"
     />
-    {{!-- <link
+   <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
       rel="stylesheet"
       type="text/css"
-    /> --}}
+    /> 
     <link
-      href="/public/vendor/simple-line-icons/css/simple-line-icons.css"
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
       rel="stylesheet"
     /> 
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/public/css/style.css">
-  <link rel="stylesheet" href="/public/css/stylish-portfolio.min.css">
-  <link rel="stylesheet" href="/public/css/stylish-portfolio.css">
-  {{!-- <link href="css/stylish-portfolio.min.css" rel="stylesheet" /> --}}
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stylish-portfolio.min.css">
+  <link rel="stylesheet" href="css/stylish-portfolio.css">
+
 
 
   <style>
@@ -49,7 +49,7 @@
       }
 
       .masthead {
-        background-image: url("https://public/img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg") !important;
+        background-image: url("https:/img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg") !important;
       }
       .btn-dark {
         margin-bottom: 0.25rem;
@@ -147,17 +147,17 @@
             right top,
             from(rgba(255, 255, 255, 0.1)),
             to(rgba(255, 255, 255, 0.1))
-          ),
-          url("../public/img/code.jpg");
+          );
         background: linear-gradient(
             90deg,
             rgba(255, 255, 255, 0.1) 0%,
             rgba(255, 255, 255, 0.1) 100%
           ),
-          url("../public/img/code.jpg");
+          url("img/code.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-image: url('img/code.jpg') !important;
       }
 
       .masthead h1 {
@@ -286,13 +286,13 @@
             from(rgba(255, 255, 255, 0.1)),
             to(rgba(255, 255, 255, 0.1))
           ),
-          url("../public/img/code.jpg");
+          url("img/code.jpg");
         background: linear-gradient(
             90deg,
             rgba(255, 255, 255, 0.1) 0%,
             rgba(255, 255, 255, 0.1) 100%
           ),
-          url("../public/img/code.jpg");
+          url("img/code.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -695,7 +695,7 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <img src="/public/img/nwcert.jpg" style="
+                      <img src="img/nwcert.jpg" style="
                         width: 75%;
                         height: 75%;
                         " />
@@ -847,7 +847,7 @@
         </div>
         <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="/public/img/iconfinder_nodejs-512_339733.png" style="margin-bottom: 1rem;" />
+            <img id="ex-icon" src="img/iconfinder_nodejs-512_339733.png" style="margin-bottom: 1rem;" />
           </span>
           <h4>
             <strong>Node</strong>
@@ -912,7 +912,7 @@
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <img id="ex-icon" src="/public/img/swift.png" style="margin-bottom: 2rem;" />
+            <img id="ex-icon" src="img/swift.png" style="margin-bottom: 2rem;" />
           </span>
           <h4>
             <strong>iOS</strong>
@@ -930,6 +930,80 @@
       </div>
     </div>
   </section>
+
+  <!-- Portfolio -->
+  
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 caption">
+          <a class="portfolio-item" href="https://fast-plateau-93122.herokuapp.com/">
+            <h2 class="p-title">Persevere Code Camp</h2>
+
+            <span class="caption">
+              <span class="caption-content">
+                <!-- <p class="mb-0">
+                  A full stack interactive coding bootcamp with login through google, progress tracking, built in code
+                  editors, and much more!
+                </p> -->
+               
+              </span>
+            </span>
+            <img class="img-fluid" src="img/pcc.png" alt="" />
+            
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+
+            <h2 class="p-title">Ameri-Mark</h2>
+            <span class="caption">
+              <span class="caption-content">
+          
+                <!-- <p class="mb-0">
+                   Features:
+                </p>
+                <ul>
+                  <li>Mongo DB</li>
+                  <li>Google Oauth Login</li>
+                  <li>Transaction Handling</li>
+                  <li>Nodemailer</li>
+                </ul> -->
+              </span>
+            </span>
+            <img class="img-fluid" src="img/amerimark.png" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <h2 class="p-title">World Word Guess Game</h2>
+            <span class="caption">
+              <span class="caption-content">
+                
+                
+              </span>
+            </span>
+            <img class="img-fluid" src="img/wwgg.png" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <h2 class="p-title">Pokemon Memory Game</h2>
+            <span class="caption">
+              <span class="caption-content">
+             
+              </span>
+            </span>
+            <img class="img-fluid" src="img/clicky.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> 
 
   <!-- Callout -->
   <section id="contact" class="callout" style="background:#92bde7;">
@@ -955,7 +1029,7 @@
         </div>
         <div class="contact">
           <h3>Email</h3>
-          {{msg}}
+ 
           <form method="POST" action="send">
             <p>
               <label>Name</label>
@@ -986,119 +1060,7 @@
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <!-- Portfolio -->
-  {{!-- <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://fast-plateau-93122.herokuapp.com/">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Persevere Code Camp</h2>
-                <p class="mb-0">
-                  A full stack interactive coding bootcamp with login through google, progress tracking, built in code
-                  editors, and much more!
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="/public/img/pcc.png" alt="" />
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ameri-Mark</h2>
-                <p class="mb-0">
-                   Features:
-                </p>
-                <ul>
-                  <li>Mongo DB</li>
-                  <li>Google Oauth Login</li>
-                  <li>Transaction Handling</li>
-                  <li>Nodemailer</li>
-                </ul>
-              </span>
-            </span>
-            <img class="img-fluid" src="/public/img/amerimark.png" alt="" />
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>World Word Guess Game</h2>
-                <p class="mb-0">
-                  A world city themed word guessing game made with Javascript.
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="/public/img/wwgg.png" alt="" />
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Pokemon Memory Game</h2>
-                <p class="mb-0">
-                  A React based memory challenge game.
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="/public/img/clicky.png" alt="" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> --}}
-<section class="content-section" id="portfolio">
-<div class="container">
-<div class="content-section-heading text-center">
-<h3 class="text-secondary mb-0">Portfolio</h3>
-
-<h2 class="mb-5">Recent Projects</h2>
-</div>
-
-<div class="row no-gutters">
-<div class="col-lg-6">
-<h2>Persevere Code Camp</h2>
-
-<p class="mb-0"><a class="portfolio-item" href="https://fast-plateau-93122.herokuapp.com/"><img alt="" class="img-fluid" src="/public/img/pcc.png" /> <span class="caption"><span class="caption-content"> A full stack interactive coding bootcamp with login through google, progress tracking, built in code editors, and much more! </span> </span> </a></p>
-
-
-<h2>Ameri-Mark</h2>
-
-<p class="mb-0"><a class="portfolio-item" href="https://ameri-mark.net"><img alt="" class="img-fluid" src="/public/img/amerimark.png" /> <span class="caption"> <span class="caption-content"> </span></span></a></p>
-
-<p class="mb-0"><a class="portfolio-item" href="#"><span class="caption"><span class="caption-content">Features: </span></span></a></p>
-
-<ul>
-	<li><a class="portfolio-item" href="#"><span class="caption"><span class="caption-content">Mongo DB</span></span></a></li>
-	<li><a class="portfolio-item" href="#"><span class="caption"><span class="caption-content">Google Oauth Login</span></span></a></li>
-	<li><a class="portfolio-item" href="#"><span class="caption"><span class="caption-content">Transaction Handling</span></span></a></li>
-	<li><a class="portfolio-item" href="#"><span class="caption"><span class="caption-content">Nodemailer</span></span></a></li>
-</ul>
-
-
-</div>
-
-<div class="col-lg-6">
-<h2>World Word Guess</h2>
-
-<p class="mb-0"><a class="portfolio-item" href="https://langhamerm.github.io/WWGG/"><img alt="" class="img-fluid" src="/public/img/wwgg.png" /> <span class="caption"><span class="caption-content">A world city themed word guessing game made with Javascript.</span> </span> </a></p>
-
-
-<h2>World Word Guess</h2>
-
-<p class="mb-0"><a class="portfolio-item" href="https://langhamerm.github.io/WWGG/"><img alt="" class="img-fluid" src="/public/img/wwgg.png" /> <span class="caption"><span class="caption-content">A world city themed word guessing game made with Javascript.</span> </span> </a></p>
-</div>
-</section>
+  
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -1137,14 +1099,14 @@
   </a>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="/public/vendor/jquery/jquery.min.js"></script>
-  <script src="/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="/public/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="/public/js/stylish-portfolio.min.js"></script>
+  <script src="js/stylish-portfolio.min.js"></script>
 </body>
 
 </html>

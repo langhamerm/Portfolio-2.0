@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio v5.0.3 (https://startbootstrap.com/template-overviews/stylish-portfolio)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ */
+
 body,
 html {
   width: 100%;
@@ -8,21 +14,8 @@ body {
   font-family: "Source Sans Pro";
 }
 
-.masthead {
-  background-image: url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg") !important;
-}
-.btn-dark {
-  margin-bottom: 0.25rem;
-}
-
-#fcc {
-  background-color: forestgreen;
-}
-#udemy {
-  background-color: firebrick;
-}
-#zenva {
-  background-color: aquamarine;
+.btn-xl {
+  padding: 1.25rem 2.5rem;
 }
 
 .content-section {
@@ -93,10 +86,6 @@ h6 {
   font-weight: 800;
 }
 
-.card {
-  border: 3px solid silver;
-}
-
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -112,13 +101,13 @@ h6 {
       from(rgba(255, 255, 255, 0.1)),
       to(rgba(255, 255, 255, 0.1))
     ),
-    url("../img/code.jpg");
+    url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg");
   background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.1) 0%,
       rgba(255, 255, 255, 0.1) 100%
     ),
-    url("../img/code.jpg");
+    url("https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +204,7 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  /* background: rgba(52, 58, 64, 0.5); */
+  background: rgba(52, 58, 64, 0.5);
   line-height: 50px;
   z-index: 999;
 }
@@ -241,7 +230,7 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* .callout {
+.callout {
   padding: 15rem 0;
   background: -webkit-gradient(
       linear,
@@ -250,17 +239,17 @@ h6 {
       from(rgba(255, 255, 255, 0.1)),
       to(rgba(255, 255, 255, 0.1))
     ),
-    url("../img/code.jpg");
+    url("../img/bg-callout.jpg");
   background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.1) 0%,
       rgba(255, 255, 255, 0.1) 100%
     ),
-    url("../img/code.jpg");
+    url("../img/bg-callout.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 .callout h2 {
   font-size: 3.5rem;
@@ -273,14 +262,278 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
+  width: 555px;
+  height: 555px;
   margin: auto auto 1rem;
 }
 
 .portfolio-item .caption {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 555px;
+  /* background-color: rgba(33, 37, 41, 0.2); */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
 
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+  opacity: 0;
+  text-align: center;
+  font-size: 0rem;
+}
+.portfolio-item .caption .caption-content:hover {
+  color: #fff;
+  margin: auto 2rem 2rem;
+  font-weight: 400;
+  font-size: 0.5rem;
+  opacity: 1;
+  text-align: center;
+}
+.portfolio-item .caption .caption-content h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+#mark {
+  position: relative;
+  left: 7rem;
+}
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  position: relative;
+  right: 7rem;
+  bottom: 5rem;
+}
+.portfolio-item .caption .caption-content ul li {
+  font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    /* margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem; */
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+    width: 555px;
+    height: 555px;
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: black;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1d809f;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+a {
+  color: #1d809f;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #155d74;
+}
+
+.btn-primary {
+  background-color: #1d809f !important;
+  border-color: #1d809f !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
+}
+
+.btn-secondary {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn {
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #1d809f !important;
+}
+
+.text-primary {
+  color: #1d809f !important;
+}
+
+.text-secondary {
+  color: #ecb807 !important;
+}
+.sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+.service-icon {
+  background-color: #fff;
+  color: #1d809f;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.callout {
+  padding: 15rem 0;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0.1)),
+      to(rgba(255, 255, 255, 0.1))
+    ),
+    url("../public/img/code.jpg");
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url("../public/img/code.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.callout h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: block;
+  max-width: 30rem;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 555px;
+  height: 555px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 555px;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .portfolio-item .caption .caption-content {
@@ -304,14 +557,14 @@ h6 {
     margin: 0;
   }
   .portfolio-item .caption {
-    /* -webkit-transition: -webkit-clip-path 0.25s ease-out,
-      background-color 0.7s; */
+    -webkit-transition: -webkit-clip-path 0.25s ease-out,
+      background-color 0.7s;
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
-    /* -webkit-transition: opacity 0.25s; */
-    /* transition: opacity 0.25s; */
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
     /* margin-left: 5rem;
 margin-right: 5rem;
 margin-bottom: 5rem; */
@@ -320,8 +573,8 @@ margin-bottom: 5rem; */
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
-    width: 100%;
-    height: 100%;
+    width: 555px;
+    height: 555px;
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
@@ -457,7 +710,7 @@ ul {
 }
 
 .contact {
-  background: #23e7ffed;
+  background: #f9feff;
 }
 
 /* FORM STYLES */
@@ -488,14 +741,11 @@ ul {
 }
 
 .contact form button {
-  background: mediumpurple;
-  border: yellow 2px solid;
+  background: #c9e6ff;
+  border: 0;
   text-transform: uppercase;
-  text-shadow: blue 1px 1px;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
 }
+
 .contact form button:hover,
 .contact form button:focus {
   background: #92bde7;
@@ -503,7 +753,6 @@ ul {
   outline: 0;
   transition: background-color 2s ease-out;
 }
-
 
 /* LARGE SCREENS */
 @media (min-width: 700px) {
@@ -577,28 +826,4 @@ ul {
   line-height: 3rem;
   color: #1abc9c;
   opacity: 1;
-}
-
-#about {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-  background-image: url('/public/img/navy.jpg');
-  /* background-repeat: no-repeat; */
-  color: white;
-  text-shadow: black 2px 2px;
-}
-#contact {
-  background-color: navy !important;
-}
-
-.company-info {
-  background: deepskyblue !important;
-}
-
-#portfolio {
-  background-image: url('https://i2.wp.com/background4free.com/download/cobalt_blue_blue_violet_783121207.jpg?q=100 ');
-}
-
-.img-fluid {
-  padding: 3em !important;
 }

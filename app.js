@@ -1,25 +1,31 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const exphbs = require("express-handlebars");
+// const exphbs = require("express-handlebars");
 const path = require("path");
 const nodemailer = require("nodemailer");
+const engines = require('consolidate');
+// const mustache = require('mustache');
 
 const app = express();
 
 // View engine setup
-  app.engine("handlebars", exphbs());
-  app.set("view engine", "handlebars");
+app.set('views', __dirname + '/views');
+app.engine('html', engines.mustache);
+app.set('view engine', 'html');
+
+  // app.engine("handlebars", exphbs());
+  // app.set("view engine", "handlebars");
 
 // Static folder
-app.use("/public", express.static(path.join(__dirname, "public")));
+// app.use("/public", express.static(path.join(__dirname, "public")));
 // app.use(express.static(path.join(__dirname)));
-
+app.use(express.static('views'));
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.render("contact");
+  res.render("index");
 });
 
 app.post("/send", (req, res) => {
@@ -69,7 +75,7 @@ app.post("/send", (req, res) => {
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
     // res.render("contact", { msg: "Email has been sent" });
-    res.render("contact");
+    // res.render("contact");
   });
 });
 app.listen(3000, () => console.log("http://localhost:3000"));

@@ -25,11 +25,13 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
+    "consolidate": "^0.15.1",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.2.0",
     "handlebars": "^4.7.3",
+    "mustache": "^4.0.1",
     "nodemailer": "^6.4.5",
     "nodemon": "^2.0.2"
   },
