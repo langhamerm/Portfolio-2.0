@@ -9,23 +9,21 @@ const engines = require('consolidate');
 const app = express();
 
 // View engine setup
-app.set('views', __dirname + '/views');
-app.engine('html', engines.mustache);
-app.set('view engine', 'html');
+
 
   // app.engine("handlebars", exphbs());
   // app.set("view engine", "handlebars");
 
 // Static folder
 // app.use("/public", express.static(path.join(__dirname, "public")));
-// app.use(express.static(path.join(__dirname)));
-app.use(express.static('views'));
+app.use(express.static(path.join(__dirname)));
+// app.use(express.static('views'));
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.send("index.html")
 });
 
 app.post("/send", (req, res) => {
